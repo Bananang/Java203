@@ -110,3 +110,82 @@ char aaa = '\u0061';    // a
 - `myString.replaceAll(str, repl);` : myString에서 str을 repl로 바꾼다.
 - `myString.substring(start, end);` : 문자열에서 시작, 끝 인덱스의 문자열을 뽑아낸다. 끝 인덱스는 포함하지 않는다.
 - `myStr.toUpperCase()`, `myStr.toLowerCase()`: 대소문자로 변경
+
+## 실습 문제    
+### 01. 첫 번째 문제
+Q 01. 다음은 변수 num의 값에 따라 '양수', '음수', '0'을 출력하는 코드이다. 삼항 연산자를 이용해서 (1)에 알맞은 코드를 넣으시오.
+```java
+class Exercise1_1 {
+    public static void main(String [] args) {
+        int num = 10;
+        System.out.println(/* (1) */);       
+  }
+}
+
+```
+#### 출력화면
+```
+양수
+```
+
+### 02. 두 번째 문제
+  Q 02. 다음은 변수 num의 값 중에서 백의 자리 이하를 버리는 코드이다. 만일 변수 num의 값이 '456'이라면 '400'이 되고, '111'이라면 '100'이 된다. (1)에 알맞은 코드를 넣으시오.
+  ```java
+class Exercise1_2 {
+    public static void main(String [] args) {
+        int num = 456;
+        System.out.println(/* (1) */);       
+  }
+}
+
+```
+#### 출력화면
+```
+400
+```
+
+### 03. 세 번째 문제
+  Q 03. int 타입의 변수 num이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코드를 완성하라. 만일 변수 num의 값이 12345 라면, '1+2+3+4+5'의 결과인 15를 출력하라. (1)에 알맞은 코드를 넣으시오.  
+  *[주의] 문자열로 변환하지 말고 숫자로만 처리해야 한다.
+
+  ```java
+class Exercise1_3 {
+    public static void main(String [] args) {
+       int num = 12345;
+       int sum = 0;
+
+       /*
+       (1)
+       */
+       System.out.println("sum = "+sum);
+  }
+}
+
+```
+#### 출력화면
+```
+15
+```
+
+
+### 04. 네 번째 문제
+  Q 04. 다음은 배열 arr에 담긴 모든 값을 더하는 프로그램이다. (1)에 알맞은 코드를 넣어 완성하시오.
+
+  ```java
+class Exercise1_4 {
+    public static void main(String [] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int total = 0;
+
+        /*
+        (1)
+        */
+        System.out.println("total = "+total);
+  }
+}
+
+```
+#### 출력화면
+```
+sum = 150
+```
