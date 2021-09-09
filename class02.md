@@ -113,37 +113,7 @@ public static void main(String [] args) {
 ```
   
 ### 03. 세 번째 문제
-  Q 03. 다음을 만족하는 Rectangle 클래스를 작성하시오.
-  - int 타입의 x, y, width, height 필드
-  - x, y, widht, height 값을 매개변수로 받아 필드를 초기화하는 생성자
-  - int square(): 사각형 넓이 리턴
-  - void show(): 사각형의 좌표와 넓이를 화면에 출력
-  - boolean contains(Rectangle r): 매개변수로 받은 r이 현 사각형 안에 있으면 true 리턴
-  
-  ```java
-  public static void main(String[] args){
-    Rectangle r = new Rectangle(2, 2, 8, 7);
-    Rectangle s = new Rectangle(5, 5, 6, 6);
-    Rectangle t = new Rectangle(1, 1, 10, 10);
-
-    r.show();
-    System.out.println("s의 면적은" + s.square());
-    if(t.contains(r)) System.out.println("t는 r을 포함합니다.");
-    if(t.contains(s)) System.out.println("t는 s를 포함합니다.");
-    }
-  ```  
-
-#### 출력화면
- ``` java
-(2,2)에서 크기가 8x7인 사각형
-s의 면적은 36
-t는 r을 포함합니다.
- ```
-  
-    
-    
-### 04. 네 번째 문제
-  Q 04. 다음을 만족하는 MonthSchedule 클래스를 작성하시오.  
+  Q 03. 다음을 만족하는 MonthSchedule 클래스를 작성하시오.  
   Month Schedule 클래스에는 Day 객체 배열과 적절한 필드, 메소드를 작성하고  
   실행 예시처럼 입력, 보기, 끝내기 등의 3개의 기능을 작성하라.  
 
@@ -163,17 +133,68 @@ t는 r을 포함합니다.
   ```
 #### 출력화면
  ``` java
-이번달 스케줄 관리 프로그램
-할일(입력:1, 보기:2, 끝내기:3) >> 1
-날짜(1~30)>> 1
-할일(빈칸없이 입력)>>자바공부
+===이번달 스케쥴 관리 프로그램===
+할일(1:입력, 2:보기 , 3:끝내기) >>1
+날짜(1~30)?3
+할일(빈칸없이입력)?자바공부
 
-할일(입력:1, 보기:2, 끝내기:3) >> 2
-날짜(1~30)>> 1
-1일의 할일은 자바공부입니다.
+할일(1:입력, 2:보기 , 3:끝내기) >>2
+날짜(1~30)?1
+1일의 할 일은 없습니다.
 
-할일(입력:1, 보기:2, 끝내기:3) >> 3
+할일(1:입력, 2:보기 , 3:끝내기) >>2
+날짜(1~30)?3
+3일의 할 일은 자바공부입니다.
+
+할일(1:입력, 2:보기 , 3:끝내기) >>3
 프로그램을 종료합니다.
+ ```
+      
+### 04. 네 번째 문제
+Q 04. 다음을 만족하는 Rectangle 클래스를 작성하시오.
+  - private로 int 타입의 width, height 필드
+  - widht, height 값을 매개변수로 받아 필드를 초기화하는 생성자
+  - void show(): 사각형의 넓이를 화면에 출력
+  - 외부에서 메소드를 통해 데이터에 접근하도록 만들기(Hint!: Getter / Setter)
+  
+  ```java
+  class Rectangle{
+    .
+    .
+    .
+  }
+  public static void main(String[] args){
+   System.out.printf("생성할 사각형의 수: ");
+
+    for(...){
+      .
+      .
+      .
+      rec[i].show();
+    }
+  }
+  ```  
+
+#### 출력화면
+ ``` java
+생성할 사각형의 수: 3
+
+--1번째 사각형 --
+가로길이(정수만 입력): 1
+세로길이(정수만 입력): 3
+1x3인 사각형의 넓이는 3입니다.
+
+--2번째 사각형 --
+가로길이(정수만 입력): 5
+세로길이(정수만 입력): 7
+5x7인 사각형의 넓이는 35입니다.
+
+--3번째 사각형 --
+가로길이(정수만 입력): 6
+세로길이(정수만 입력): 3
+6x3인 사각형의 넓이는 18입니다.
+
+Process finished with exit code 0
  ```
   
 
