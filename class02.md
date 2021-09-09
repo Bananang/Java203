@@ -64,7 +64,31 @@ class Square {
     
 ## 실습 문제    
 ### 01. 첫 번째 문제
-Q 01. 다음을 만족하는 Grade 클래스를 작성하시오.
+Q 01. 다음을 만족하는 Song 클래스를 작성하시오.
+- 노래의 제목을 나타내는 title
+- 가수를 나타내는 artist
+- 노래가 발표된 연도를 나타내는 year
+
+```java
+public class Song {
+  // 매개변수로 모든 필드를 초기화 하는 생성자
+
+  // 노래 정보를 출력하는 show 메소드
+
+  public static void main(String[] args){
+    // artist 객체 생성
+
+    // 생성된 객체의 show 메소드 출력
+
+  }
+}
+```  
+#### 출력화면
+ ``` java
+ 2021년 BTS가 부른 Butter
+ ```
+ 
+Q 02. 다음을 만족하는 Grade 클래스를 작성하시오.
 -  3 과목의 점수를 입력받는 Grade객체 생성
 - Grade 클래스의 main() 메소드에서 Grade 객체를 생성하여 3과목의 성적을 입력 후 출력하라
 ```java
@@ -87,29 +111,7 @@ public static void main(String [] args) {
 ```
   
 ### 02. 두 번째 문제
-  Q 02. 다음을 만족하는 Song 클래스를 작성하시오.
- - 노래의 제목을 나타내는 title
- - 가수를 나타내는 artist
- - 노래가 발표된 연도를 나타내는 year
 
-```java
-public class Song {
-  // 매개변수로 모든 필드를 초기화 하는 생성자
-
-  // 노래 정보를 출력하는 show 메소드
-
-  public static void main(String[] args){
-    // artist 객체 생성
-
-    // 생성된 객체의 show 메소드 출력
-
-  }
-}
-```  
-#### 출력화면
- ``` java
- 2021년 BTS가 부른 Butter
- ```
 
 ### 03. 세 번째 문제
   Q 03. 다음을 만족하는 Rectangle 클래스를 작성하시오.
