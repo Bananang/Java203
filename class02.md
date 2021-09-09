@@ -88,6 +88,8 @@ public class Song {
  2021년 BTS가 부른 Butter
  ```
  
+ ### 02. 두 번째 문제
+ 
 Q 02. 다음을 만족하는 Grade 클래스를 작성하시오.
 -  3 과목의 점수를 입력받는 Grade객체 생성
 - Grade 클래스의 main() 메소드에서 Grade 객체를 생성하여 3과목의 성적을 입력 후 출력하라
@@ -110,9 +112,6 @@ public static void main(String [] args) {
 평균은 91
 ```
   
-### 02. 두 번째 문제
-
-
 ### 03. 세 번째 문제
   Q 03. 다음을 만족하는 Rectangle 클래스를 작성하시오.
   - int 타입의 x, y, width, height 필드
