@@ -76,7 +76,7 @@ public static void main(String [] args) {
   int science = scanner.nextInt();
   int english = scanner.nextInt();
   Grade me = new Grade(math, science, english);
-  System.out.println("평균은 "+me.average()); // average()는 평균을 계산하여 리턴
+  System.out.println("평균은 "+me.average()+"점 입니다."); // average()는 평균을 계산하여 리턴
   
 }
 ```
